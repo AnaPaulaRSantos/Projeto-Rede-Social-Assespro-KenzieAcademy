@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');</style>
+    
+    
+    <title>Petbook</title>
+</head>
+<body>
+    <!-----Barra de Nav------>
+    
+    
+    
+    <nav>
+        <div class="nav_left">
+            <h3> Petbook</h3>
+            <ul>
+                <li><img src="notificação.png" alt="Icone de notificação"></li>
+                <li><img src="inbox.png" alt="Icone de inbox"></li>
+                <li><img src="playicon.png" alt="Icone de midia"></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <div class="search_box">
+                <img src="lupa.png" alt="search">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <div class="nav_user_icon">
+                <img src="perfil.jpg" alt="perfil">
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-----------story-------------->
+    <div class="stories">
+        <div class="horizontal-scroll">
+            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fas fa-chevron-left"></i></button>                               
+            <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class=" fas fa-chevron-right"></i></button>
+            
+            <div class="storys-container">
+                <div class="story-circle"> <img src="animal1.png" alt="coelho"></div>
+                <div class="story-circle"> <img src="animal2.png" alt="panda"></div>
+                <div class="story-circle"> <img src="animal3.png" alt="porco"></div>
+                <div class="story-circle"> <img src="animal4.png" alt="ouriço"></div>
+                <div class="story-circle"> <img src="animal5.png" alt="gato"></div>
+                <div class="story-circle"> <img src="animal6.png" alt="girafa"></div>
+                <div class="story-circle"> <img src="animal7.png" alt="coelho"></div>
+                <div class="story-circle"> <img src="animal8.png" alt="pato"></div>
+                <div class="story-circle"> <img src="animal9.png" alt="cachorro"></div>
+                <div class="story-circle"> <img src="animal10.png" alt="pintinho"></div>
+                <div class="story-circle"> <img src="animal11.png" alt="cachorro"></div>
+                <div class="story-circle"> <img src="animal12.png" alt="girafa"></div>
+                <div class="story-circle"> <img src="animal13.png" alt="gato"></div>
+                <div class="story-circle"> <img src="animal14.png" alt="porquinho da India"></div>
+                <div class="story-circle"> <img src="animal15.png" alt="gato"></div>
+                <div class="story-circle"> <img src="animal16.png" alt="cavalo"></div>
+                <div class="story-circle"> <img src="animal17.png" alt="vaca"></div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!---------Principal------------->
+    <main class="container">
+       
+        
+        <section class="main">
+            
+            <div class="post_container post_creator">
+                <div class="user_profile">
+                    <img src="perfil.jpg" alt="Perfil">
+                    <div>
+                        <p>Harry , o porquinho da India</p>
+                    </div>
+                </div>
+                
+                <div class="post_input_container">
+                    <textarea id="post_input" rows="3" placeholder="No que você está pensando?"></textarea>
+                    <div class="add_post_icons">
+                        <a href="#" ><img src="videoicon.jpg" alt="video"> Vídeo ao vivo</a>
+                        <a href="#"><img src="foto.png" alt="midia"> Foto / Vídeo</a>
+                        <a href="#"><img src="sentimento.png" alt="sentimentos"> Sentimento / Atividade</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post_container">
+                <div class="post_row">
+                    
+                    <div class="user_profile">
+                        <img src="perfil.jpg" alt="perfil">
+                        <div>
+                            <p>Harry, o porquinho da India</p>
+                            <span>15 de abril às 15:15</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="post_description">Se inscreva na Kenzie Academy.  
+                    <a target="_blank" href="https://kenzie.com.br/">#KenzieAcademyBR</a> 
+                    <a target="_blank" href="https://www.youtube.com/channel/UC6rcCbDzhVoIm1V7WnwPDIQ">#CanalYoutube</a>
+                </p>
+
+                <img class="post_img" src="fotoporq.jpg" alt="feed">
+                
+                <div class="post_row">
+                    <div class="numbers">
+                        <div class="numbers_left">
+                            <span>1.5K</span>
+                        </div>
+                        <div class="numbers_right">
+                            <span>117 Comments</span>
+                            <span>17 Shares</span>
+                        </div>
+                    </div>
+                    <div class="atividade_icons">
+                        <div><img src="like.png" alt="like"> Like</div>
+                        <div><img src="comment.png" alt="comentários"> Comment</div>
+                        <div><img src="share.jpg" alt="compartilhamentos"> Share</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="load_more_btn" type="button">Carregar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright 2022 - Petbook</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
