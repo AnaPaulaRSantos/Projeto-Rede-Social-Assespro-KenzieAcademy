@@ -12,6 +12,7 @@
     <title>Petbook</title>
 </head>
 <body>
+    <div class="bodycontainer">
     <!-----Barra de Nav------>
     
     
@@ -67,23 +68,34 @@
 
     </div>
     
-    <!---------Principal------------->
+                        <!---------Principal------------->
     
-    <section id="cx lateral">
+    <!--------Caixa Lateral---------->
+    <section">
+    
         <aside id="lateral">
-            <div class="espaço">
-                <img class="amigos" src="animal1.png"><p> Coelhos</p> </div>
             
+               
             <div class="espaço">
-                <img class="amigos" src="animal9.png"><p> Cachorros</p></div>
-
+                
+                <img class="amigos" src="animal1.png">
+                <a class="pagamigos" href="grupocoelhos.html" rel="next" target="_blank"><p> Coelhos</p></a></div>
+                <img class="onlineicon" src="onlineicon.png">
+            <div class="espaço">
+                
+                <img class="amigos" src="animal9.png">
+                <a class="pagamigos" href="grupocachorros.html" rel="next" target="_blank"><p> Cachorros</p></a></div>
+                <img class="onlineicon" src="onlineicon.png">
+   
             <div class="espaço">
                 <img class="amigos" src="animal3.png"><p> Porquinhos</p></div>
 
+              
             <div class="espaço">
                 <img class="amigos" src="animal5.png"><p> Gatos</p></div>
-
-            <div class="espaço">
+                
+            
+                <div class="espaço">
                 <img class="amigos" src="animal14.png"><p> Porquinhos da India</p></div>
 
             <div class="espaço">
@@ -96,7 +108,7 @@
                 <img src="lupa.png" alt="search">
                 <input type="text" placeholder="Pesquisar">
             </div>
-
+            
         </aside>
 
     </section>
@@ -145,8 +157,11 @@
                     <a target="_blank" href="https://kenzie.com.br/">#KenzieAcademyBR</a> 
                     <a target="_blank" href="https://www.youtube.com/channel/UC6rcCbDzhVoIm1V7WnwPDIQ">#CanalYoutube</a>
                 </p>
-
-                <img class="post_img" src="fotoporq.jpg" alt="feed">
+                <picture class="feed">
+                    <source media="(max-width: 600px)" srcset="fotoporqpq.jpg">
+                    <img class="post_img" src="fotoporq.jpg" alt="feed">
+                </picture>
+                
                 
                 <div class="post_row">
                     <div class="numbers">
@@ -213,5 +228,6 @@
         <p>Copyright 2022 - Petbook</p></footer>
 
     <script src="script.js"></script>
+    </div>
 </body>
 </html>

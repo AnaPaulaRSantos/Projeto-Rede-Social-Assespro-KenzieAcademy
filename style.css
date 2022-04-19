@@ -1,17 +1,18 @@
-
-
-body, span, section,p, img, a, div,  ul, li, nav, img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'poppins', sans-serif;
-    text-decoration: none;
+body{
+    background-color: rgb(233, 233, 231);
 }
 
-body {
-    background-color: #efefef;
+.bodycontainer{
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+    margin: auto;
+    min-width:280px ;
+    max-width: 800px;
+}
+
+.feed{
+    width: 100%;
 }
 
 nav {
@@ -26,7 +27,7 @@ nav {
 h3{
     font-family: 'Indie Flower', cursive;
     color: white;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .nav_left {
@@ -41,9 +42,10 @@ h3{
 }
 
 .nav_left ul li img {
-    width: 25px;
+    width: 20px;
     height: 20px;
     margin:20px ;
+    padding: 2px;
     margin-right: 5px;
     border-radius: 5px;
 }
@@ -68,11 +70,12 @@ h3{
 
 .search_box {
     background-color: #efefef;
-    width: 350px;
+    width: 165px;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 0 17px;
+    padding: 0 10px;
+    margin-left: 7px;
 }
 
 .search_box img {
@@ -87,14 +90,12 @@ h3{
     outline: none;
     padding: 10px
 }
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 450px;
+    margin-left: 105px;
 }
-
 .user_profile {
     display: flex;
     align-items: center;
@@ -113,12 +114,15 @@ h3{
     color: #626262;
 }
 
+
+
+
 .post_container {
     width: 100%;
     background-color: #ffffff;
     border-radius: 7px;
     color: #c9c9c9;
-     
+    
     margin: 20px auto ;
     
 }
@@ -191,9 +195,10 @@ h3{
     padding: 20px 0;
     
 }
-
+.aPanda{
+    padding: 25px;
+}
 span{margin: 5px ;}
-
 
 .atividade_icons {
     display: flex;
@@ -232,45 +237,67 @@ span{margin: 5px ;}
     color: #626262;
     padding: 10px 0 20px;
     font-size: 12px;
-    margin-left: 450px;
+    margin-right: 50px;
 
 }
+.pagamigos{
+    text-decoration: none;
+}
 
+/* cx lateral*/
 #lateral{
     float: right;
-    background-color: #e7e5e5;
-    width: 350px;
-    height: 450px;
+    background-color: #e6dfdf;
+    width: 200px;
+    height: 375px;
     border-radius: 10px;
-    margin-right: 420px;
+    margin-right: 5px;
     margin-top: 20px;
     
     
 }
 .espaço{
-    margin: 7px;
-    width: 330px;
-    height: 50px;
-    background-color: whitesmoke;
     
+    width: 185px;
+    height: 30px;
+    background-color: rgb(245, 243, 243);
+    margin: 5px;
+    padding-top: 12px;
+
     border-radius: 5px;
 }
 .amigos{
-    width: 35px;
-    margin: 5px;
+    width: 30px;
+    
+    margin-top: -5px;
+    margin-left: 5px ;
     border-radius: 100%;
 }
 
 aside p{
-    margin: -39px 50px;
+    font-size: 18px;
+    margin: -30px 50px;
+    align-items: center;
+    
+    
 }
 
 
-.aPanda{
-    padding: 25px;
+
+.onlineicon{
+    width: 10px;
+    float: left;
+    margin-top: -18px;
+    
+  
+    border-radius: 10px;
+    border: 2px solid   rgba(107, 214, 134, 0.877) ;
 }
 
 
+
+
+/* entrada da pag index(capa)*/
 .logoentrada{
     width: 400px;
     margin-left: 90px;
@@ -317,17 +344,19 @@ aside p{
     text-decoration: none;
 }
 
+
+/*stories*/
 .stories{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d8d8d8;
+    background-color: #e1e4e6;
     height: 150px;
 
 }
 
 .horizontal-scroll{
-    width: 1300px;
+    width: 800px;
     height: 100px;
     background-color: #e2dbdb;
     border: 1px solid whitesmoke;
@@ -338,12 +367,16 @@ aside p{
     align-items: center;
     position: relative;
     overflow: hidden;
-    margin-left: -250px;
 }
+.btn-scroll{ 
+    width: 5px;
+    
+}
+
 
 .horizontal-scroll .btn-scroll{
     background-color: #fdfdfd;
-    color: rgb(245, 241, 241);
+    color: rgb(200, 202, 204);
     box-shadow: 0 0 10px rgb(184, 180, 180);
     padding: 5px 8px;
     border: 0;
